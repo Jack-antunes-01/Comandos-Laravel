@@ -21,3 +21,31 @@ Essa key preenche o .env automaticamente <br />
 <br />
 Para rodar o servidor local: <br />
 php artisan serve <br />
+
+<br /><br />
+Acessar o tinker: <br />
+php artisan tinker <br />
+
+<br />
+Listar todos os dados de determinada tabela: <br />
+App\[nome_tabela]::all(); <br />
+
+<br />
+Criar uma nova instância de determinado dado: <br />
+$[variavel] = new App\[nome_model];
+<br />
+<br />
+Popular um objeto: <br />
+$[variavel]->[atributo] = "[valor]";<br />
+<br />
+Listar objeto: <br />
+$[variavel];<br />
+<br />
+Salvar no banco: <br />
+$[variavel]->save();<br />
+<br />
+Encontrar dado no banco: <br />
+$[variavel] = App\[nome_model]::find([id]); <br /><br />
+Deletar dado do banco: <br />
+$[variavel]->delete();
+
