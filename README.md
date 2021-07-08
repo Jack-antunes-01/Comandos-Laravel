@@ -13,39 +13,48 @@ php artisan make:model Contato -m<br />
 Para criar controller: <br />
 php artisan [nome_função] [nome_controller] <br />
 php artisan make:controller ContatoController <br />
-<br />
+
+Para criar seed: <br />
+php artisan [nome_função] [nome_seed] <br />
+php artisan make:seed UsuarioSeeder<br />
+
+Para executar as seeds: <br />
+php artisan db:seed <br /> 
+
+Para executar uma seed específica: <br />
+php artisan db:ssed --class=[nome_seed] <br />
+php artisan db:seed --class=UsuarioSeeder<br /> 
+
 Para gerar uma key: <br />
 php artisan [nome_função] <br />
 php artisan key:generate<br />
 Essa key preenche o .env automaticamente <br />
 <br />
 Para rodar o servidor local: <br />
-php artisan serve <br />
+php artisan serve 
 
-<br /><br />
 Acessar o tinker: <br />
-php artisan tinker <br />
+php artisan tinker 
 
-<br />
 Listar todos os dados de determinada tabela: <br />
-App\[nome_tabela]::all(); <br />
+App\[nome_tabela]::all();
 
-<br />
 Criar uma nova instância de determinado dado: <br />
 $[variavel] = new App\[nome_model];
-<br />
-<br />
+
 Popular um objeto: <br />
 $[variavel]->[atributo] = "[valor]";<br />
-<br />
+
 Listar objeto: <br />
 $[variavel];<br />
-<br />
+
 Salvar no banco: <br />
 $[variavel]->save();<br />
-<br />
+
 Encontrar dado no banco: <br />
 $[variavel] = App\[nome_model]::find([id]); <br /><br />
 Deletar dado do banco: <br />
 $[variavel]->delete();
+
+
 
