@@ -2,9 +2,13 @@
 <br />
 Comandos:<br />
 <br />
+
+Para rodar as migrations e criar as tabelas no banco: <br />
+php artisan migrate<br />
+
 Para criar migration:<br />
 php artisan [nome_função] [nome_tabela_padrao] --create=[nome_tabela_plural]<br />
-php artisan make:migration create_produtos_table --create=produtos<br /><br />
+php artisan make:migration create_produtos_table --create=produtos<br />
 
 Para criar model: <br />
 php artisan [nome_função] [nome_model_singular] -m // -m faz com que crie automaticamente uma migration.<br />
